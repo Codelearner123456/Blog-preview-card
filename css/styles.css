@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Primary-color: hsl(47, 88%, 63%);
+  --Neutral-color1: white;
+  --Neutral-color2: grey;
+  --Neutral-color3: black;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--Primary-color);
+  color: var(--Neutral-color3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.blog-card {
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--Neutral-color1);
+  border: 2px solid var(--Neutral-color3);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px var(--Neutral-color3);
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.blog-tag {
+  background-color: var(--Primary-color);
+  color: var(--black);
+  font-size: 0.8em;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.blog-details {
+  display: flex;
+  align-items: center;
+}
+
+.blog-published {
+  color: var(--Neutral-color3);
+  font-size: 0.8em;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.blog-title {
+  margin-top: 20px;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.blog-title:hover {
+  color: var(--Primary-color);
+}
+
+.blog-description {
+  color: var(--Neutral-color2);
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.blog-author-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.blog-author-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog-author {
+  font-weight: bold;
+}
+
+.footer {
+  color: #777;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
